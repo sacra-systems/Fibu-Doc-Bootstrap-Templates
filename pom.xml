@@ -87,8 +87,8 @@
   <name>Heiliger Martin Bootstrap Templates</name>
   <description>Template Set using Bootstrap.</description>
   <scm>
-    <connection>scm:dummy:uri</connection>
-    <developerConnection>scm:dummy:uri</developerConnection>
+    <connection>scm:git:https://github.com/sacra-systems/Heiliger-Martin-Bootstrap-Templates</connection>
+    <developerConnection>scm:git:https://github.com/sacra-systems/Heiliger-Martin-Bootstrap-Templates</developerConnection>
   </scm>
   <properties>
     <jahia-module-type>templatesSet</jahia-module-type>
