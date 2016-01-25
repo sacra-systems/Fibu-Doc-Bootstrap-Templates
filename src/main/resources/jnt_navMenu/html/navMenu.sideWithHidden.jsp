@@ -14,9 +14,20 @@
 <c:set var="homeNode" value="${renderContext.site.home.path}"/>
 <c:set var="pagePath" value="${fn:substringAfter(renderContext.mainResource.node.path,homeNode)}"/>
 <c:set var="paths" value="${fn:split(pagePath,'/')}"/>
+<c:set var="startlevel" value="${currentNode.properties['j:startLevel'].string}"/>
+
 <jcr:nodeProperty name="j:styleName" node="${currentNode}" var="styleName"/>
 
-<jcr:node var="rootNode" path="${homeNode}/${paths[0]}"/>
+<c:set var="homeChild" value="${jcr:getNodes(renderContext.site.home,'jnt:page')}" />
+
+<c:choose>
+    <c:when test="${startlevel<1}">
+        <c:set var="rootNode" value="${homeChild[-startlevel]}" />
+    </c:when>
+    <c:otherwise>
+        <jcr:node var="rootNode" path="${homeNode}/${paths[0]}"/>
+    </c:otherwise>
+</c:choose>
 
 <script type="text/javascript">
     $(document).ready(function () {
