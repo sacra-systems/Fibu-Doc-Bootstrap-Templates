@@ -37,6 +37,7 @@
 
     <%-- font-awesome icons --%>
     <template:addResources type="css" resources="font-awesome.css"/>
+    
 
     <%-- Fav and touch icons --%>
     <link rel="shortcut icon" href="https://heiliger-martin-kaiserslautern.de/files/live/sites/hlmartin/files/bootstrap/img/favicon.ico" type="image/vnd.microsoft.icon" />
