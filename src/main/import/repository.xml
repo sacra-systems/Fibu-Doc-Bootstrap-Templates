@@ -8,19 +8,23 @@
                                         j:title="Heiliger Martin Bootstrap Templates"
                                         jcr:mixinTypes="jmix:hasExternalProviderExtension"
                              jcr:primaryType="jnt:module">
-                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl jmix:sourceControl"
                   jcr:primaryType="jnt:moduleVersionFolder"
-                  j:staticMountPointProviderKey="module-heiliger-martin-bootstrap-templa-1.1-SNAPSHOT">
-                    <src jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
-                        <main jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
-                            <resources jcr:primaryType="jnt:folder">
+                  j:staticMountPointProviderKey="module-heiliger-martin-bootstrap-templa-1.2-SNAPSHOT">
+                    <src jcr:mixinTypes="jmix:sourceControl jmix:sourceControl"
+                 jcr:primaryType="jnt:folder">
+                        <main jcr:mixinTypes="jmix:sourceControl jmix:sourceControl"
+                     jcr:primaryType="jnt:folder">
+                            <resources jcr:mixinTypes="jmix:sourceControl jmix:sourceControl"
+                             jcr:primaryType="jnt:folder">
                                 <jnt_template jcr:primaryType="jnt:nodeTypeFolder">
                                     <html jcr:primaryType="jnt:templateTypeFolder"/>
                                 </jnt_template>
                                 <jnt_navMenu jcr:primaryType="jnt:nodeTypeFolder">
                                     <html jcr:primaryType="jnt:templateTypeFolder"/>
                                 </jnt_navMenu>
-                                <css jcr:primaryType="jnt:cssFolder"/>
+                                <css jcr:mixinTypes="jmix:sourceControl jmix:sourceControl"
+                          jcr:primaryType="jnt:cssFolder"/>
                                 <jnt_contentList jcr:primaryType="jnt:nodeTypeFolder">
                                     <html jcr:primaryType="jnt:templateTypeFolder"/>
                                 </jnt_contentList>

@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1454940925458
+Bnd-LastModified: 1454949393535
 Build-Jdk: 1.7.0_79
 Built-By: jahia
 Bundle-Category: jahia-module
@@ -9,51 +9,51 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Heiliger Martin Bootstrap Templates
 Bundle-SymbolicName: heiliger-martin-bootstrap-templa
 Bundle-Vendor: Jahia Solutions Group SA
-Bundle-Version: 1.1.0.SNAPSHOT
+Bundle-Version: 1.2.0.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
 Dynamic-ImportPackage: *
 Implementation-Title: Heiliger Martin Bootstrap Templates
 Implementation-URL: http://www.jahia.com
 Implementation-Vendor: Jahia Solutions Group SA
-Implementation-Version: 1.1-SNAPSHOT
+Implementation-Version: 1.2-SNAPSHOT
 Import-Package: javax.servlet.http;version="[3.0,4)",org.jahia.services.
  content,org.jahia.services.content.decorator,org.jahia.services.render,
  org.apache.commons.fileupload.disk;version="[1.3,2)",org.apache.commons
  .io,org.apache.tika.io;version="[1.0,2)",org.jahia.bin,org.jahia.servic
  es.image,org.jahia.tools.files,org.jahia.utils.i18n,org.json,org.slf4j,
- org.jahia.services,org.jahia.taglibs.jcr.query;version="[7.1,8)",org.ja
- hia.services.content.nodetypes.renderer,org.apache.solr.util,org.jahia.
- taglibs.uicomponents.loginform;version="[7.1,8)",org.jahia.utils,org.ja
- hia.taglibs.uicomponents;version="[7.1,8)",org.jahia.taglibs.search;ver
- sion="[7.1,8)",org.apache.commons.collections,org.jahia.taglibs.utility
- .siteproperties;version="[7.1,8)",org.jahia.services.sites,org.jahia.ta
- glibs.utility.session;version="[7.1,8)",org.apache.taglibs.standard.fun
- ctions,javax.jcr.query.qom;version="[2.0,3)",org.jahia.taglibs.template
- ;version="[7.1,8)",org.apache.taglibs.standard.tei,org.jahia.data.viewh
- elper.principal,org.jahia.taglibs.template.layoutmanager;version="[7.1,
- 8)",org.apache.lucene.document,org.jahia.taglibs.template.pager;version
- ="[7.1,8)",org.jahia.modules.bootstrap.tags;version="[2.0,3)",org.jahia
- .taglibs.user;version="[7.1,8)",org.apache.taglibs.standard.tag.rt.core
- ,org.apache.solr.schema,org.apache.commons.id,org.jahia.taglibs.jcr;ver
- sion="[7.1,8)",org.jahia.taglibs.uicomponents.image;version="[7.1,8)",o
- rg.jahia.taglibs.internal.date;version="[7.1,8)",org.jahia.services.ren
- der.scripting,org.jahia.taglibs.utility;version="[7.1,8)",org.jahia.tag
- libs.uicomponents.i18n;version="[7.1,8)",org.apache.solr.client.solrj.r
- esponse,javax.jcr.nodetype;version="[2.0,3)",org.jahia.taglibs.query;ve
- rsion="[7.1,8)",org.apache.taglibs.standard.tag.common.core,org.jahia.t
- aglibs;version="[7.1,8)",org.jahia.taglibs.template.gwt;version="[7.1,8
- )",org.jahia.settings,org.jahia.taglibs.utility.i18n;version="[7.1,8)",
- org.jahia.taglibs.jcr.node;version="[7.1,8)",org.jahia.services.query,j
- avax.jcr;version="[2.0,3)",org.apache.commons.lang.math;version="[2.6,3
- )",org.apache.taglibs.unstandard;version="[7.1,8)",org.apache.naming.ja
- va,org.jahia.taglibs.functions;version="[7.1,8)",org.jahia.services.use
- rmanager,org.jahia.taglibs.facet;version="[7.1,8)",org.jahia.taglibs.ui
- components.portlets;version="[7.1,8)",org.jahia.taglibs.utility.constan
- ts;version="[7.1,8)",org.apache.commons.lang;version="[2.6,3)",org.apac
- he.taglibs.standard.tag.rt.fmt,org.apache.taglibs.standard.tag.el.fmt,o
- rg.jahia.services.content.nodetypes,org.jahia.taglibs.template.include;
- version="[7.1,8)",org.jahia.services.seo,org.jahia.exceptions,org.jahia
- .defaults.config.spring
+ org.jahia.services.content.nodetypes.renderer,org.jahia.services.userma
+ nager,org.jahia.taglibs.utility;version="[7.1,8)",org.jahia.taglibs.uti
+ lity.session;version="[7.1,8)",javax.jcr.nodetype;version="[2.0,3)",org
+ .jahia.taglibs.uicomponents.loginform;version="[7.1,8)",org.apache.luce
+ ne.document,org.jahia.taglibs.user;version="[7.1,8)",org.jahia.utils,or
+ g.jahia.taglibs.uicomponents.portlets;version="[7.1,8)",org.jahia.tagli
+ bs.functions;version="[7.1,8)",org.jahia.taglibs.template;version="[7.1
+ ,8)",org.jahia.taglibs.utility.i18n;version="[7.1,8)",org.jahia.excepti
+ ons,org.jahia.services.seo,org.jahia.taglibs;version="[7.1,8)",org.jahi
+ a.taglibs.template.layoutmanager;version="[7.1,8)",javax.jcr.query.qom;
+ version="[2.0,3)",org.apache.naming.java,org.jahia.defaults.config.spri
+ ng,org.apache.commons.lang;version="[2.6,3)",org.jahia.taglibs.jcr.quer
+ y;version="[7.1,8)",org.jahia.services,org.apache.solr.client.solrj.res
+ ponse,org.apache.solr.util,org.jahia.taglibs.template.gwt;version="[7.1
+ ,8)",org.apache.taglibs.standard.tei,org.jahia.taglibs.uicomponents.i18
+ n;version="[7.1,8)",org.apache.taglibs.standard.tag.common.core,org.jah
+ ia.taglibs.template.include;version="[7.1,8)",org.apache.solr.schema,or
+ g.apache.taglibs.standard.tag.el.fmt,org.jahia.taglibs.uicomponents.ima
+ ge;version="[7.1,8)",javax.jcr;version="[2.0,3)",org.jahia.taglibs.util
+ ity.constants;version="[7.1,8)",org.apache.taglibs.standard.tag.rt.fmt,
+ org.jahia.taglibs.jcr;version="[7.1,8)",org.jahia.taglibs.query;version
+ ="[7.1,8)",org.apache.taglibs.standard.functions,org.jahia.taglibs.jcr.
+ node;version="[7.1,8)",org.jahia.taglibs.uicomponents;version="[7.1,8)"
+ ,org.jahia.data.viewhelper.principal,org.jahia.taglibs.search;version="
+ [7.1,8)",org.jahia.services.render.scripting,org.apache.commons.collect
+ ions,org.jahia.services.content.nodetypes,org.jahia.services.query,org.
+ jahia.taglibs.template.pager;version="[7.1,8)",org.apache.taglibs.stand
+ ard.tag.rt.core,org.jahia.taglibs.utility.siteproperties;version="[7.1,
+ 8)",org.jahia.taglibs.facet;version="[7.1,8)",org.jahia.modules.bootstr
+ ap.tags;version="[2.0,3)",org.jahia.services.sites,org.apache.taglibs.u
+ nstandard;version="[7.1,8)",org.apache.commons.id,org.jahia.taglibs.int
+ ernal.date;version="[7.1,8)",org.jahia.settings,org.apache.commons.lang
+ .math;version="[2.6,3)"
 Jahia-Depends: bootstrap,bootstrap-components,contact,default,event,face
  ts,search,teasers
 Jahia-Download-Sources-Available: true
@@ -130,5 +130,5 @@ Require-Capability: com.jahia.services.content;filter:="(nodetypes=jmix:
  SE)(version=1.7))"
 Specification-Title: Heiliger Martin Bootstrap Templates
 Specification-Vendor: Jahia Solutions Group SA
-Specification-Version: 1.1-SNAPSHOT
+Specification-Version: 1.2-SNAPSHOT
 Tool: Bnd-2.3.0.201405100607
