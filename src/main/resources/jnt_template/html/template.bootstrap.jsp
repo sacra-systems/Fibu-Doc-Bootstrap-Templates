@@ -16,12 +16,20 @@
 <%--@elvariable id="currentResource" type="org.jahia.services.render.Resource"--%>
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
 
+<c:url value='${url.base}${renderContext.mainResource.node.path}.html' var="linkUrl" />
+<jcr:nodeProperty node="${renderContext.mainResource.node}" name="jcr:title" var="title"/>
+<jcr:nodeProperty node="${renderContext.mainResource.node}" name="image" var="image" />
+<jcr:nodeProperty node="${renderContext.mainResource.node}" name="desc" var="desc"/>
+<c:set var="descEscaped" value="${functions:removeHtmlTags(desc.string)}" />
+
+
+
 <html lang="${renderContext.mainResourceLocale.language}">
 
 <head>
     <meta charset="utf-8">
 
-  <title>Pfarrei Hl. Martin: ${fn:escapeXml(renderContext.mainResource.node.displayableName)}</title>
+  <title>${fn:escapeXml(renderContext.mainResource.node.displayableName)}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -40,9 +48,10 @@
     
 
     <%-- Fav and touch icons --%>
-    <link rel="shortcut icon" href="https://heiliger-martin-kaiserslautern.de/files/live/sites/hlmartin/files/bootstrap/img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="shortcut icon" href="/files/live/sites/hlmartin/files/bootstrap/img/favicon.ico" type="image/vnd.microsoft.icon" />
   
-    <link href="https://heiliger-martin-kaiserslautern.de/files/live/sites/hlmartin/files/lightbox2/css/lightbox.css" rel="stylesheet">
+    <link href="/files/live/sites/hlmartin/files/lightbox2/css/lightbox.css" rel="stylesheet">
+    <link href="/files/live/sites/hlmartin/files/bootstrap/shariff/shariff.min.css" rel="stylesheet">
     
    
     <link rel="apple-touch-icon" href="<c:url value='${url.currentModule}/img/icon/icon-iphone.png'/>"/>
@@ -61,25 +70,26 @@
     <%-- Google fonts--%>
     <c:set var="s" value="${renderContext.request.scheme=='https'?'s':''}"/>
     <link href='http${s}://fonts.googleapis.com/css?family=Scada' rel='stylesheet' type='text/css'>
+  
+    
    
-    <meta property="og:url"           content="https://heiliger-martin-kaiserslautern.de" />
-	<meta property="og:type"          content="website" />
-	<meta property="og:title"         content="Heiliger Martin Kaiserslautern" />
-	<meta property="og:description"   content="Katholische Pfarrei Heiliger Martin Kaiserslautern" />
-
+  
+    <meta property="og:title"         content="${title.string}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:locale"        content="de_DE" />
+    <meta property="og:url"           content="https://heiliger-martin-kaiserslautern.de${linkUrl}" />
+    <meta property="og:site_name"     content="Heiliger Martin Kaiserslautern" />
+    <c:if test="${! empty image}">
+    <meta property="og:image"         content="https://heiliger-martin-kaiserslautern.de${image.node.url}" />
+    </c:if>
+    <c:if test="${! empty desc}">      
+    <meta property="og:description"   content="${descEscaped}" />
+    </c:if>
+    
 </head>
 
 <body>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-  
   
 <%-- Les styles old--%>
 <template:addResources type="css" resources="jahia-old-responsive.css,jahia-old.css"/>
@@ -157,8 +167,8 @@
 </c:if>
 
 
-<script src="https://heiliger-martin-kaiserslautern.de/files/live/sites/hlmartin/files/lightbox2/js/lightbox.js"></script>
-  
+<script src="/files/live/sites/hlmartin/files/lightbox2/js/lightbox.js"></script>
+<script src="/files/live/sites/hlmartin/files/bootstrap/shariff/shariff.min.js"></script>  
 
   
 <!-- Piwik -->
