@@ -81,14 +81,14 @@
     <version>7.1.0.0</version>
   </parent>
   <groupId>org.jahia.modules</groupId>
-  <artifactId>heiliger-martin-bootstrap-templa</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <artifactId>fibu-doc-bootstrap-templates</artifactId>
+  <version>1.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>Heiliger Martin Bootstrap Templates</name>
+  <name>Fibu Doc Bootstrap Templates</name>
   <description>Template Set using Bootstrap.</description>
   <scm>
-    <connection>scm:git:https://github.com/sacra-systems/Heiliger-Martin-Bootstrap-Templates</connection>
-    <developerConnection>scm:git:https://github.com/sacra-systems/Heiliger-Martin-Bootstrap-Templates</developerConnection>
+    <connection>scm:git:https://github.com/sacra-systems/Fibu-Doc-Bootstrap-Templates</connection>
+    <developerConnection>scm:git:https://github.com/sacra-systems/Fibu-Doc-Bootstrap-Templates</developerConnection>
   </scm>
   <properties>
     <jahia-module-type>templatesSet</jahia-module-type>
